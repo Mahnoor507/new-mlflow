@@ -13,8 +13,6 @@ from sklearn import metrics
 import mlflow
 import mlflow.sklearn
 from mlflow.tracking import MlflowClient
-
-from urllib.parse import parse_qsl, urljoin, urlparse
 def foo():
   print("-------------------------------------------------------------------------------------------------")
   print("------------------------------------------ Previous Model details -------------------------------")
