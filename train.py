@@ -54,7 +54,6 @@ if __name__ == "__main__":
       mlflow.log_metric("precision", precision)     
       mlflow.sklearn.log_model(model, "model")
       filter_string="name = 'random-forest-model'"
-      tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
       new=client.search_registered_models(filter_string=filter_string)
       if(new):
         models=new[0]._latest_version
