@@ -1,8 +1,6 @@
 import os
 import warnings
 import sys
-from mlflow.types import schema
-
 import pandas as pd
 import numpy as np
 from pandas.core.algorithms import mode
